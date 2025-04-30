@@ -18,6 +18,7 @@ export async function POST(req: Request) {
       headings: { en: title },
       contents: { en: message },
       data: { groupId },
+       android_channel_id: '341cc0aa-fb38-401e-a354-ad186a364ba2'
     }, {
       headers: {
         Authorization: `Basic ${process.env.ONESIGNAL_REST_API_KEY}`,
